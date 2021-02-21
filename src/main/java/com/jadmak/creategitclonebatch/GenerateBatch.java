@@ -52,7 +52,7 @@ public class GenerateBatch implements CommandLineRunner {
 				if (projecto instanceof Map<?, ?>) {
 					Map<String, String> project = (Map<String, String>) projecto;
 					sb.append("git clone ");
-					sb.append(project.get("git_url"));
+					sb.append(project.get("clone_url"));
 					sb.append("\n");
 				}
 			}
